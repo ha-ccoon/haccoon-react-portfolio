@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Sans_KR } from 'next/font/google';
 
+import '../styles/globals.scss';
+
 const inter = IBM_Plex_Sans_KR({
   weight: ['400', '500', '600'],
   subsets: ['latin'],
@@ -20,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
-        {/* Layout UI */}
         <main>{children}</main>
       </body>
     </html>
