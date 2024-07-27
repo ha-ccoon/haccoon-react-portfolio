@@ -1,0 +1,10 @@
+@import '../../styles/fonts.modules.scss';
+
+.nav {
+  padding: 2rem;
+}
+
+.navItems {
+  padding-left: 2rem;
+  @extend %h4;
+}
