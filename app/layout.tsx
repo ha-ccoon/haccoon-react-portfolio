@@ -4,7 +4,8 @@ import { IBM_Plex_Sans_KR } from 'next/font/google';
 import NavigationBar from '@/components/navigation/navigation-bar';
 
 import '../styles/globals.scss';
-import style from '../components/navigation/navigation.module.scss';
+import './stars.scss';
+import style from './app.module.scss';
 
 const inter = IBM_Plex_Sans_KR({
   weight: ['400', '500', '600'],
@@ -13,7 +14,7 @@ const inter = IBM_Plex_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: 'Kujin Ko',
+  title: 'Kyujin Ko',
   description: 'Resume',
 };
 
@@ -26,7 +27,8 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body>
         <NavigationBar />
-        <main>{children}</main>
+        <div id="stars"></div>
+        <main className={style.section}>{children}</main>
       </body>
     </html>
   );
