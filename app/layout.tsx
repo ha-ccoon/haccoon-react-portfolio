@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Sans_KR } from 'next/font/google';
+import React from 'react';
 
 import NavigationBar from '@/components/navigation/navigation-bar';
 
-import '../styles/globals.scss';
+import '@/styles/globals.scss';
+import '@/styles/index.scss';
 import './stars.scss';
 import style from './app.module.scss';
 

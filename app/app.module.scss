@@ -1,0 +1,29 @@
+@import '../styles/colors.module.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  color: $on-primary;
+
+  .greeting {
+    padding-right: 1.875rem;
+    line-height: 8rem;
+  }
+
+  .occupation {
+    color: $on-primary;
+  }
+
+  .circle-photo {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
