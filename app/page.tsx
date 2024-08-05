@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import style from './app.module.scss';
+import Footer from '@/components/footer/footer';
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           <h4 className={style.occupation}>Assistant Researcher</h4>
         </article>
 
-        <div>
+        <div className={style['photo-container']}>
           <Image
             className={style['circle-photo']}
             src="/haccoon.jpeg"
@@ -25,6 +26,10 @@ export default function Home() {
             height={120}
           />
         </div>
+      </div>
+      <div id={style.gap} />
+      <div className={style.layout}>
+        <Footer />
       </div>
     </React.Fragment>
   );
