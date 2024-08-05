@@ -1,5 +1,18 @@
 @import '../styles/colors.module.scss';
 
+.layout {
+  text-align: center;
+}
+
+.title {
+  color: $on-primary-container;
+  padding: 1.5rem 0rem;
+}
+
+#gap {
+  padding: 6rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -15,9 +28,21 @@
     color: $on-primary;
   }
 
-  .circle-photo {
+  .photo-container {
+    background-color: white;
     width: 25rem;
     height: 25rem;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .circle-photo {
+    width: 23rem;
+    height: 23rem;
     border-radius: 50%;
     overflow: hidden;
     img {

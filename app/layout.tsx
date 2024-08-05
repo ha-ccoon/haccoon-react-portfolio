@@ -6,8 +6,8 @@ import NavigationBar from '@/components/navigation/navigation-bar';
 
 import '@/styles/globals.scss';
 import '@/styles/index.scss';
-import './stars.scss';
 import style from './app.module.scss';
+import './stars.scss';
 
 const inter = IBM_Plex_Sans_KR({
   weight: ['400', '500', '600'],
@@ -29,8 +29,8 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body>
         <NavigationBar />
-        <div id="stars"></div>
-        <main className={style.section}>{children}</main>
+        {/* <div id="stars"></div> */}
+        <main>{children}</main>
       </body>
     </html>
   );

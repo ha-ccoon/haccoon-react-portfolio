@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import style from './app.module.scss';
 import Footer from '@/components/footer/footer';
+import AboutMe from './aboutme';
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </div>
       <div id={style.gap} />
       <div className={style.layout}>
+        <AboutMe />
         <Footer />
       </div>
     </React.Fragment>
