@@ -7,7 +7,13 @@ export default function Footer() {
     <React.Fragment>
       <footer>
         <div className={style.container}>
-          <h2 className={style.title}>Contact Me</h2>
+          <h2 className={style.title}>Contact Me</h2
+          <link
+            rel="icon"
+            href="/icon?<generated>"
+            type="image/<generated>"
+            sizes="<generated>"
+          />
         </div>
       </footer>
     </React.Fragment>
