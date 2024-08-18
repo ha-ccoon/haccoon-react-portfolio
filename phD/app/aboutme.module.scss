@@ -1,0 +1,11 @@
+@import '../styles/colors.module.scss';
+
+.container {
+  background-color: $surface-variant;
+  padding: 3rem 2rem 8rem;
+}
+
+.title {
+  color: $on-primary-container;
+  padding: 1.5rem 0rem;
+}

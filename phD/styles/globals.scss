@@ -1,0 +1,80 @@
+@import './fonts.module.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  background: linear-gradient(
+      136deg,
+      rgb(68, 132, 206),
+      rgb(26, 215, 192),
+      rgb(255, 155, 17),
+      rgb(155, 89, 182),
+      rgb(255, 127, 127),
+      rgb(236, 240, 241)
+    )
+    0% 0% / 1200% 1200%;
+  animation: color 50s ease-in-out infinite;
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  @include font-styles($h1);
+}
+
+h2 {
+  @include font-styles($h2);
+}
+
+h3 {
+  @include font-styles($h3);
+}
+
+h4 {
+  @include font-styles($h4);
+}
+
+h5 {
+  @include font-styles($h5);
+}
+
+h6 {
+  @include font-styles($h6);
+}
