@@ -1,0 +1,10 @@
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  .element {
+    padding-right: 1rem;
+  }
+}
