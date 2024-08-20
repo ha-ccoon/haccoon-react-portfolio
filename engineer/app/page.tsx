@@ -1,7 +1,13 @@
-export default function Home() {
+import React from 'react';
+
+import { Greeting } from '@/components/greeting/Greeting';
+
+import './app.scss';
+
+export default function Main() {
   return (
-    <main>
-      <h2>Hello</h2>
-    </main>
+    <React.Fragment>
+      <Greeting />
+    </React.Fragment>
   );
 }

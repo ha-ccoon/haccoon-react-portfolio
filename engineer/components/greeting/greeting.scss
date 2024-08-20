@@ -1,0 +1,40 @@
+.greeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-image {
+  background-color: white;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.greeting-section {
+  padding-left: 2.5rem;
+
+  .greeting-title {
+    font-size: 4rem;
+  }
+
+  .greeting-subsection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    .greeting-subtitle {
+      font-size: 2.5rem;
+    }
+
+    .greeting-description {
+      font-size: 1.5rem;
+    }
+  }
+}
