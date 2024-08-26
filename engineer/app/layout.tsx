@@ -1,20 +1,11 @@
-import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 import NavigationBar from '@/components/navigation/NavigationBar';
+import { font, theme } from '@/utils/theme';
 
+import '@mantine/core/styles.css';
 import '@/app/global.scss';
-import './app.scss';
-
-const inter = Poppins({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-});
-
-export const metadata: Metadata = {
-  title: 'Minha Sohn',
-  description: 'Software Engineer',
-};
+import '@/app/app.scss';
 
 export default function RootLayout({
   children,
@@ -22,10 +13,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={font.className}>
+      <head>
+        <ColorSchemeScript />
+      </head>
       <body className="app-container">
         <NavigationBar />
-        <main>{children}</main>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );

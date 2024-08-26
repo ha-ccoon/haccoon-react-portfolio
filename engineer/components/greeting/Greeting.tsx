@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import './greeting.scss';
+import { Button } from '@mantine/core';
 
 export function Greeting() {
   return (
@@ -12,8 +13,9 @@ export function Greeting() {
           className="greeting-image"
           src="/haccoon.jpg"
           alt={'haccoon image'}
-          width={120}
           height={120}
+          width={120}
+          priority={true}
         />
       </div>
 
@@ -23,6 +25,7 @@ export function Greeting() {
           <h2 className="greeting-subtitle">Full-Stack Engineer</h2>
           <p className="greeting-description">Specialized in Healthcare</p>
         </div>
+        <Button>안녕하세요 눌러주세요</Button>
       </section>
     </div>
   );
