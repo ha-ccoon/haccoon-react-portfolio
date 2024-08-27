@@ -2,7 +2,18 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import { Text, Title } from '@mantine/core';
+import { ActionIcon, Button, Text, Title } from '@mantine/core';
+import {
+  IconBrandGithub,
+  IconBrandGithubFilled,
+  IconBrandLinkedin,
+  IconBrandNotion,
+  IconFile,
+  IconFileDescription,
+  IconFileHorizontal,
+  IconFileSmile,
+  IconFileText,
+} from '@tabler/icons-react';
 
 import './greeting.scss';
 
@@ -36,6 +47,32 @@ export function Greeting() {
               perspiciatis! Maiores minima consectetur.
             </Text>
           </div>
+          <div className="greeting-button-div">
+            <Button
+              className="greeting-button"
+              leftSection={<IconFileDescription title="resume" />}
+              variant="light"
+            >
+              Resume
+            </Button>
+            <Button
+              className="greeting-button"
+              leftSection={<IconBrandNotion title="portfolio" />}
+              variant="light"
+            >
+              Portfolio
+            </Button>
+          </div>
+
+          {/* TODO: 20240827 find a place for the below icons */}
+          {/* <div>
+            <ActionIcon size={35}>
+              <IconBrandGithub size={30} stroke={2} title="github" />
+            </ActionIcon>
+            <ActionIcon size={35}>
+              <IconBrandLinkedin size={30} title="linkedin" />
+            </ActionIcon>
+          </div> */}
         </section>
       </div>
     </React.Fragment>

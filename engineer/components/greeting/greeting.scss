@@ -31,7 +31,7 @@
 }
 
 .greeting-section {
-  padding: 3rem 2.5rem 0;
+  padding: 2rem 2.5rem 0;
 
   width: 60%;
   word-wrap: break-word;
@@ -45,4 +45,13 @@
   .greeting-description-text {
     padding-top: 2rem;
   }
+}
+
+.greeting-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.greeting-button {
+  margin: 1.5rem 0.5rem;
 }
