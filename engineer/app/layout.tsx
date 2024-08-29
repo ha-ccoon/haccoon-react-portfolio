@@ -13,11 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={font.className}>
+    <html lang="en">
       <head>
         <ColorSchemeScript />
       </head>
-      <body className="app-container">
+      <body className={font.className}>
         <NavigationBar />
         <MantineProvider withCssVariables={true} theme={theme}>
           {children}
