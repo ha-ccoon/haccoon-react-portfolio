@@ -1,4 +1,13 @@
-import { Grid, GridCol, Group, Paper, SimpleGrid, Text } from '@mantine/core';
+import {
+  Badge,
+  Flex,
+  Grid,
+  GridCol,
+  Paper,
+  Space,
+  Text,
+  Title,
+} from '@mantine/core';
 
 import { SkillCategory } from '../types';
 import { category, skills } from '../constant';
@@ -8,36 +17,56 @@ import '@/components/paper/skill-paper.scss';
 export default function SkillPaper() {
   return (
     <section className="skill-section">
-      <Grid
-        align="stretch"
-        // gutter={{ base: 5, xs: 'md', md: 'xl' }}
-        grow={true}
-        justify="center"
-        // overflow="hidden"
-      >
+      <Title order={2}>Skills</Title>
+      <Space h="md" />
+      <Grid gutter={{ base: 5, xs: 'md', md: 'xl', xl: 50 }} justify="center">
         {category.map((value: SkillCategory, index: number) => {
           return (
-            <GridCol span={4} color="red" key={index}>
+            <GridCol
+              classNames={{
+                col: 'skill-grid-column',
+              }}
+              span={4}
+              key={index}
+            >
               <Paper
                 classNames={{
-                  root: 'paper',
+                  root: 'skill-paper',
                 }}
                 shadow="sm"
                 p="xl"
                 radius="md"
                 withBorder={true}
-                style={{ height: '200px' }}
               >
-                <Text size="xl" fw={700} c="paleBlue">
+                <Text classNames={{ root: 'text' }} size="xl" fw={700}>
                   {value}
                 </Text>
-                {skills[value].map((value: string, index: number) => {
-                  return (
-                    <Text key={index} size="sm" fw={200} c="blueGray">
-                      {value}
-                    </Text>
-                  );
-                })}
+                <Flex
+                  align="center"
+                  columnGap="lg"
+                  rowGap="lg"
+                  direction="row"
+                  gap="md"
+                  justify="flex-start"
+                  key={index}
+                >
+                  <div className="skill-badge-div">
+                    {skills[value].map((value: string, index: number) => {
+                      return (
+                        <Badge
+                          classNames={{
+                            root: 'skill-badge',
+                          }}
+                          key={index}
+                          size="lg"
+                          variant="light"
+                        >
+                          {value}
+                        </Badge>
+                      );
+                    })}
+                  </div>
+                </Flex>
               </Paper>
             </GridCol>
           );
