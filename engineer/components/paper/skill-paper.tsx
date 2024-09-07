@@ -1,4 +1,4 @@
-import { Grid, GridCol, Group, Paper, Text } from '@mantine/core';
+import { Grid, GridCol, Group, Paper, SimpleGrid, Text } from '@mantine/core';
 
 import { SkillCategory } from '../types';
 import { category, skills } from '../constant';
@@ -8,24 +8,29 @@ import '@/components/paper/skill-paper.scss';
 export default function SkillPaper() {
   return (
     <section className="skill-section">
-      {category.map((value: SkillCategory, index: number) => {
-        return (
-          <Paper
-            classNames={{
-              root: 'paper',
-            }}
-            key={index}
-            shadow="sm"
-            radius="md"
-            withBorder={true}
-          >
-            <Grid grow={true}>
-              <GridCol span={1}>
+      <Grid
+        align="stretch"
+        // gutter={{ base: 5, xs: 'md', md: 'xl' }}
+        grow={true}
+        justify="center"
+        // overflow="hidden"
+      >
+        {category.map((value: SkillCategory, index: number) => {
+          return (
+            <GridCol span={4} color="red" key={index}>
+              <Paper
+                classNames={{
+                  root: 'paper',
+                }}
+                shadow="sm"
+                p="xl"
+                radius="md"
+                withBorder={true}
+                style={{ height: '200px' }}
+              >
                 <Text size="xl" fw={700} c="paleBlue">
                   {value}
                 </Text>
-              </GridCol>
-              <GridCol className="skill-grid-column" span={6}>
                 {skills[value].map((value: string, index: number) => {
                   return (
                     <Text key={index} size="sm" fw={200} c="blueGray">
@@ -33,11 +38,11 @@ export default function SkillPaper() {
                     </Text>
                   );
                 })}
-              </GridCol>
-            </Grid>
-          </Paper>
-        );
-      })}
+              </Paper>
+            </GridCol>
+          );
+        })}
+      </Grid>
     </section>
   );
 }

@@ -36,9 +36,17 @@ export const category: SkillCategory[] = [
 export const skills: Record<SkillCategory, string[]> = {
   Language: ['JavaScript', 'TypeScript', 'Python'],
   Backend: ['NodeJS', 'ExpressJS', 'NestJS'],
-  Frontend: ['React/NextJS'],
-  Database: ['MySQL', 'MongoDB'],
-  DevOps: ['Docker', 'Nginx', 'PM2'],
+  Frontend: ['NextJS'],
+  Database: ['MySQL', 'PostgreSQL', 'MongoDB'],
+  DevOps: [
+    'Docker',
+    'Nginx',
+    'PM2',
+    'AWS EC2',
+    'AWS RDS',
+    'AWS ACM',
+    'AWS Route53',
+  ],
 };
 
 // export const elements = [{ position: ['nestjs', 'expressjs', 'ddd'] }];
