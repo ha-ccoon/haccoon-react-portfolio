@@ -13,7 +13,7 @@ export const categories: Category[] = [
   },
   {
     key: '3',
-    route: 'experience',
+    route: '#experience',
     item: 'Experience',
   },
   {
