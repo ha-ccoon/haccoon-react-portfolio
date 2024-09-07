@@ -17,7 +17,7 @@ import {
 
 import './greeting.scss';
 
-export function Greeting() {
+export default function Greeting() {
   return (
     <React.Fragment>
       <Title className="greeting-title" order={1}>

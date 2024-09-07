@@ -1,0 +1,33 @@
+.skill-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 8rem 5rem;
+}
+
+.skill-grid-column {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-paper {
+  background-color: var(--mantine-color-paleBlue-1);
+  height: 12.5rem;
+  margin: 1rem;
+
+  .text {
+    color: var(--mantine-color-blueGray-7);
+  }
+}
+
+.skill-badge-div {
+  margin: 0.5rem 0;
+
+  .skill-badge {
+    color: var(--mantine-color-paleBlue-7);
+    font-weight: 600;
+    display: inline-flex;
+    padding: 0.8rem;
+    margin: 0 0.1rem 0.4rem 0;
+  }
+}
