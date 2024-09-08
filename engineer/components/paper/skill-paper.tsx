@@ -10,17 +10,17 @@ import {
 } from '@mantine/core';
 
 import { SkillCategory } from '../types';
-import { category, skills } from '../constant';
+import { skillCategory, skills } from '../constant';
 
 import '@/components/paper/skill-paper.scss';
 
 export default function SkillPaper() {
   return (
     <section className="skill-section">
-      <Title order={2}>Skills</Title>
+      <Title order={3}>Skills</Title>
       <Space h="md" />
       <Grid gutter={{ base: 5, xs: 'md', md: 'xl', xl: 50 }} justify="center">
-        {category.map((value: SkillCategory, index: number) => {
+        {skillCategory.map((value: SkillCategory, index: number) => {
           return (
             <GridCol
               classNames={{
@@ -38,9 +38,9 @@ export default function SkillPaper() {
                 radius="md"
                 withBorder={true}
               >
-                <Text classNames={{ root: 'text' }} size="xl" fw={700}>
+                <Title classNames={{ root: 'text' }} order={4}>
                   {value}
-                </Text>
+                </Title>
                 <Flex
                   align="center"
                   columnGap="lg"
