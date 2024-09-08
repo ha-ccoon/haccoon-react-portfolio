@@ -53,7 +53,7 @@ export const skills: Record<SkillCategory, string[]> = {
 export const educationData: Education[] = [
   {
     title: 'AI workforce development Course Completion (70 hrs)',
-    organization: 'KIST(Korea Institute of Science and Technology)',
+    organization: 'KIST (Korea Institute of Science and Technology)',
     period: '2024.07 - 2024.08',
     status: 'Complete',
   },
@@ -64,10 +64,11 @@ export const educationData: Education[] = [
     status: 'Complete',
   },
   {
-    title: 'Business Administration, Supply Chain Management',
+    title: 'Business Administration - Supply Chain Management',
     organization: 'Southern Alberta Institute of Technology (SAIT)',
     period: '2018.01 - 2019.12',
     status: 'Graduate',
+    description: ['캐나다 캘거리 소재의 대학에서 경영학과 - 유통 전공 졸업'],
   },
   {
     title: 'Display Engineering',

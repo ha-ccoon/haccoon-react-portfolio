@@ -12,8 +12,8 @@ export default function Main() {
     <React.Fragment>
       <Greeting />
       <Skills />
-      <Education />
       <Experience />
+      <Education />
     </React.Fragment>
   );
 }
