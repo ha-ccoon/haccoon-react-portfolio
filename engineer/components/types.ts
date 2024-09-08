@@ -15,3 +15,20 @@ export type SkillCategory =
   | 'Database'
   | 'DevOps'
   | 'Language';
+
+//
+export interface PositionDescriptions {
+  main: string;
+  secondary?: string;
+}
+export interface Positions {
+  position: string;
+  period: string;
+  descriptions: PositionDescriptions[];
+}
+
+export interface Experience {
+  company: string;
+  companyDescription: string;
+  positions: Positions[];
+}
