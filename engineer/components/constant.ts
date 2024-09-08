@@ -1,5 +1,6 @@
-import { Category, Experience, SkillCategory } from './types';
+import { Category, Education, Experience, SkillCategory } from './types';
 
+// navigation
 export const categories: Category[] = [
   {
     key: '1',
@@ -23,7 +24,7 @@ export const categories: Category[] = [
   },
 ];
 
-//
+// skill
 export const skillCategory: SkillCategory[] = [
   'Backend',
   'Frontend',
@@ -48,7 +49,35 @@ export const skills: Record<SkillCategory, string[]> = {
   ],
 };
 
-//
+// education
+export const educationData: Education[] = [
+  {
+    title: 'AI workforce development Course Completion (70 hrs)',
+    organization: 'KIST(Korea Institute of Science and Technology)',
+    period: '2024.07 - 2024.08',
+    status: 'Complete',
+  },
+  {
+    title: 'Web Development & IoT Bootcamp (6 months)',
+    organization: 'Elice',
+    period: '2022.12 - 2023.05',
+    status: 'Complete',
+  },
+  {
+    title: 'Business Administration, Supply Chain Management',
+    organization: 'Southern Alberta Institute of Technology (SAIT)',
+    period: '2018.01 - 2019.12',
+    status: 'Graduate',
+  },
+  {
+    title: 'Display Engineering',
+    organization: 'Pukyong National University',
+    period: '2014.01 - 2016.06',
+    status: 'Withdrawal',
+  },
+];
+
+// experience
 export const experienceData: Experience[] = [
   {
     company: 'Lien Inc.',
