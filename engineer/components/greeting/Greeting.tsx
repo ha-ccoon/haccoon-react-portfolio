@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import { ActionIcon, Button, Text, Title } from '@mantine/core';
+import { ActionIcon, Button, Divider, Text, Title } from '@mantine/core';
 import {
   IconBrandGithub,
   IconBrandGithubFilled,
@@ -39,7 +39,7 @@ export default function Greeting() {
         <section className="greeting-section">
           <div className="greeting-sub-div">
             <Title order={2}>Full-Stack Engineer</Title>
-            <Title order={3}>Specialized in Healthcare</Title>
+            <Title order={4}>Specialized in Healthcare</Title>
             <Text className="greeting-description-text">
               Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta
               facilis perspiciatis corporis nulla aspernatur. Autem eligendi

@@ -91,8 +91,18 @@ export const theme = createTheme({
         lineHeight: '1.4',
       },
       h3: {
-        fontWeight: '400',
+        fontWeight: '800',
+        fontSize: rem(35),
+        lineHeight: '1.4',
+      },
+      h4: {
+        fontWeight: '700',
         fontSize: rem(25),
+        lineHeight: '1.4',
+      },
+      h5: {
+        fontWeight: '700',
+        fontSize: rem(20),
         lineHeight: '1.4',
       },
     },
