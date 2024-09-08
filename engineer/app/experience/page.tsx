@@ -5,8 +5,8 @@ import ExperienceComponent from '@/components/experience/ExperienceComponent';
 
 export default function Experience() {
   return (
-    <section>
+    <React.Fragment>
       <ExperienceComponent />
-    </section>
+    </React.Fragment>
   );
 }
