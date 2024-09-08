@@ -8,7 +8,7 @@ export const categories: Category[] = [
   },
   {
     key: '2',
-    route: 'education',
+    route: '#education',
     item: 'Education',
   },
   {
