@@ -1,0 +1,32 @@
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-title-div {
+  padding-top: 1rem;
+
+  .company {
+    // color: var(--mantine-color-sweetYellow-7);
+  }
+}
+
+.experience-grid {
+  margin: 0.5rem 0 2.5rem 0;
+
+  .col {
+    padding-top: 1rem;
+  }
+
+  .period {
+    color: var(--mantine-color-blueGray-4);
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .experience-divider {
+    flex-grow: 1;
+    padding: 0.1rem;
+  }
+}
