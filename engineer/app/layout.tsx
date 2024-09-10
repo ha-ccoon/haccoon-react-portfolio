@@ -4,7 +4,7 @@ import NavigationBar from '@/components/navigation/NavigationBar';
 import { font, theme } from '@/utils/theme';
 
 import '@mantine/core/styles.css';
-import '@/app/global.scss';
+import '@/app/global.css';
 import '@/app/app.scss';
 
 export default function RootLayout({
@@ -13,13 +13,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={font.className}>
+    <html lang="en">
       <head>
         <ColorSchemeScript />
       </head>
-      <body className="app-container">
+      <body className={font.className}>
         <NavigationBar />
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider withCssVariables={true} theme={theme}>
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );

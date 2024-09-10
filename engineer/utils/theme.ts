@@ -16,7 +16,7 @@ export const font = Poppins({
 });
 
 //
-const defaultColor: MantineColorsTuple = [
+const paleBlue: MantineColorsTuple = [
   '#eef3ff',
   '#dce4f5',
   '#b9c7e2',
@@ -29,16 +29,84 @@ const defaultColor: MantineColorsTuple = [
   '#2d4b81',
 ];
 
+const blueGray: MantineColorsTuple = [
+  '#f3f3fe',
+  '#e4e6ed',
+  '#c8cad3',
+  '#a9adb9',
+  '#9093a4',
+  '#808496',
+  '#767c91',
+  '#656a7e',
+  '#585e72',
+  '#4a5167',
+];
+
+const sweetYellow: MantineColorsTuple = [
+  '#fffbe5',
+  '#fff5d0',
+  '#ffea9f',
+  '#fede69',
+  '#fed43f',
+  '#fecd26',
+  '#feca1a',
+  '#e3b20d',
+  '#c99e00',
+  '#ae8800',
+];
+
+const softPink: MantineColorsTuple = [
+  '#ffebf3',
+  '#fad2e2',
+  '#f8a0c2',
+  '#f86ba1',
+  '#f74386',
+  '#f82f75',
+  '#f9266d',
+  '#de1c5c',
+  '#c61352',
+  '#ad0045',
+];
+
+//
 export const theme = createTheme({
+  black: '#585e72',
   colors: {
-    paleBlue: defaultColor,
+    paleBlue: paleBlue,
+    blueGray: blueGray,
+    sweetYellow: sweetYellow,
+    softPink: softPink,
   },
+  defaultRadius: 10,
   headings: {
     sizes: {
-      h1: { fontSize: rem(4) },
-      h2: { fontSize: rem(2.5) },
-      h3: { fontSize: rem(1.5) },
+      h1: {
+        fontWeight: '900',
+        fontSize: rem(70),
+        lineHeight: '1.4',
+      },
+      h2: {
+        fontWeight: '700',
+        fontSize: rem(45),
+        lineHeight: '1.4',
+      },
+      h3: {
+        fontWeight: '800',
+        fontSize: rem(35),
+        lineHeight: '1.4',
+      },
+      h4: {
+        fontWeight: '700',
+        fontSize: rem(25),
+        lineHeight: '1.4',
+      },
+      h5: {
+        fontWeight: '700',
+        fontSize: rem(20),
+        lineHeight: '1.4',
+      },
     },
+    textWrap: 'wrap',
   },
   primaryColor: 'paleBlue',
 });
