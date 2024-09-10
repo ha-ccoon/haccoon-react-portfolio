@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0](https://github.com/ha-ccoon/haccoon-react-portfolio/compare/v1.0.0...v1.1.0) (2024-09-10)
+
+
+### Features
+
+* create a experience section ([a7ba651](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/a7ba651762f131c516f455994b3aa9cb939c07a4))
+* create a greeting component ([5b48403](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/5b484034f46abb7cab754c6014cc55662056aca1))
+* create a navigation bar component ([45f376e](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/45f376ee3d33e544f09db808d8bbd11ff480bce4))
+* create a skill paper component ([efebeee](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/efebeee7f75affb169440111465c727f79a91026))
+
 ## 1.0.0 (2024-08-18)
 
 ### Features
