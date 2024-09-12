@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   Space,
   Timeline,
@@ -9,50 +11,66 @@ import {
   List,
   ListItem,
   Stack,
+  Container,
 } from '@mantine/core';
-import React from 'react';
+
 import { educationData } from '../constant';
 import { Education } from '../types';
 
+import '@/components/education/education.scss';
+
 export default function EducationComponent() {
   return (
-    <section>
-      <Title order={3}>Education</Title>
+    <section className="education-section">
+      <Title
+        classNames={{
+          root: 'title',
+        }}
+        order={3}
+      >
+        Education
+      </Title>
+      <Space h="md" />
 
-      <Timeline bulletSize={24} lineWidth={2}>
-        {educationData.map((value: Education, index) => {
-          return (
-            <TimelineItem key={index}>
-              <Grid>
-                <GridCol span={6}>
-                  <Title order={5}>{value.title}</Title>
-                  <Text c="dimmed" size="sm">
-                    {value.organization}
-                  </Text>
-                  {value.description &&
-                    value.description?.map((value) => {
-                      return (
-                        <List>
-                          <ListItem>{value}</ListItem>
-                        </List>
-                      );
-                    })}
-                </GridCol>
-                <GridCol span={2}>
-                  <Stack gap={0}>
-                    <Text>{value.status}</Text>
-                    <Text>{value.period}</Text>
-                  </Stack>
-                </GridCol>
-              </Grid>
-
-              {/* <Text size="xs" mt={4}>
-                2 hours ago
-              </Text> */}
-            </TimelineItem>
-          );
-        })}
-      </Timeline>
+      <div className="timeline-div">
+        <Timeline
+          classNames={{
+            root: 'timeline',
+            itemBody: 'timeline-item-body',
+          }}
+          bulletSize={24}
+          lineWidth={2}
+        >
+          {educationData.map((value: Education, index) => {
+            return (
+              <TimelineItem key={index}>
+                <Grid>
+                  <GridCol span={6}>
+                    <Title order={5}>{value.title}</Title>
+                    <Text c="dimmed" size="sm">
+                      {value.organization}
+                    </Text>
+                    {value.description &&
+                      value.description?.map((value, index) => {
+                        return (
+                          <List key={index}>
+                            <ListItem>{value}</ListItem>
+                          </List>
+                        );
+                      })}
+                  </GridCol>
+                  <GridCol span={2}>
+                    <Stack gap={0}>
+                      <Text>{value.status}</Text>
+                      <Text>{value.period}</Text>
+                    </Stack>
+                  </GridCol>
+                </Grid>
+              </TimelineItem>
+            );
+          })}
+        </Timeline>
+      </div>
 
       <Space h="md" />
     </section>
