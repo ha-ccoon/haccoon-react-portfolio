@@ -7,8 +7,8 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconMailHeart,
-  IconRecordMail,
 } from '@tabler/icons-react';
+import Image from 'next/image';
 
 export default function ContactComponent() {
   return (
@@ -19,8 +19,24 @@ export default function ContactComponent() {
         }}
         order={3}
       >
-        Get in touch
+        Contact
       </Title>
+
+      <div className="image-div">
+        <Image
+          className="image"
+          src="/haccoon.jpg"
+          alt={'haccoon image'}
+          height={120}
+          width={120}
+          priority={true}
+        />
+      </div>
+
+      <Text>Minha Sohn</Text>
+      <Text>Seoul, South Korea</Text>
+      <Text>Full Stack Engineer specialized in Healthcare</Text>
+      {/* <Text>True Korean, Honorary Canadian</Text> */}
 
       <Container
         classNames={{

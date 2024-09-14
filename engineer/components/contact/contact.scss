@@ -10,6 +10,24 @@
     text-align: center;
   }
 
+  .image-div {
+    margin: 3rem 0;
+
+    width: 30%;
+
+    .image {
+      background-color: white;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+  }
+
   .container {
     display: flex;
     gap: 2rem;
