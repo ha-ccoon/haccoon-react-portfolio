@@ -6,6 +6,7 @@ import Greeting from '@/components/greeting/Greeting';
 import Skills from '@/app/skills/page';
 import NavigationBar from '@/components/navigation/NavigationBar';
 import Contact from '@/app/contact/page';
+import Footer from '@/components/footer/footer';
 
 export default function Main() {
   return (
@@ -16,6 +17,7 @@ export default function Main() {
       <Experience />
       <Education />
       <Contact />
+      <Footer />
     </React.Fragment>
   );
 }
