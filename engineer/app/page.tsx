@@ -6,6 +6,7 @@ import Greeting from '@/components/greeting/Greeting';
 import Skills from '@/app/skills/page';
 
 import './app.scss';
+import Contact from './contact/page';
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
       <Skills />
       <Experience />
       <Education />
+      <Contact />
     </React.Fragment>
   );
 }

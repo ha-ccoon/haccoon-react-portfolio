@@ -19,7 +19,7 @@ export const categories: Category[] = [
   },
   {
     key: '4',
-    route: 'contact',
+    route: '#contact',
     item: 'Contact',
   },
 ];
