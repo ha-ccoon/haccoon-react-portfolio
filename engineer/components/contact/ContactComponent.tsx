@@ -43,13 +43,31 @@ export default function ContactComponent() {
           root: 'container',
         }}
       >
-        <ActionIcon size={50} variant="filled">
+        <ActionIcon
+          component="a"
+          href={process.env.LINKEDIN}
+          target="blank"
+          size={50}
+          variant="filled"
+        >
           <IconBrandLinkedin size={40} />
         </ActionIcon>
-        <ActionIcon size={50} variant="filled">
+        <ActionIcon
+          component="a"
+          href={process.env.GITHUB}
+          target="blank"
+          size={50}
+          variant="filled"
+        >
           <IconBrandGithub size={40} />
         </ActionIcon>
-        <ActionIcon size={50} variant="filled">
+        <ActionIcon
+          component="a"
+          href={process.env.EMAIL}
+          target="blank"
+          size={50}
+          variant="filled"
+        >
           <IconMailHeart size={40} />
         </ActionIcon>
       </Container>
