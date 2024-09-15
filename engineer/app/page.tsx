@@ -7,8 +7,6 @@ import Skills from '@/app/skills/page';
 import NavigationBar from '@/components/navigation/NavigationBar';
 import Contact from '@/app/contact/page';
 
-import './app.scss';
-
 export default function Main() {
   return (
     <React.Fragment>
