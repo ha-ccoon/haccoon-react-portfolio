@@ -1,13 +1,17 @@
-import Link from 'next/link';
 import React from 'react';
+
+import Link from 'next/link';
+
+import { Container } from '@mantine/core';
+
 import { categories } from '../constant';
 
 import '@/components/navigation/navigation.scss';
 
 export default function NavigationBar() {
   return (
-    <React.Fragment>
-      <div className="nav-container">
+    <section>
+      <Container className="nav-container">
         <Link href={'/'}>MS</Link>
         <nav>
           {categories.map((element) => (
@@ -16,7 +20,7 @@ export default function NavigationBar() {
             </Link>
           ))}
         </nav>
-      </div>
-    </React.Fragment>
+      </Container>
+    </section>
   );
 }

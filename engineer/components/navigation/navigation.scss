@@ -1,8 +1,10 @@
 .nav-container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+
+  margin: 0 12rem;
   padding: 2rem;
+  width: 100%;
 
   .element {
     padding-right: 1rem;
