@@ -5,22 +5,27 @@
   margin: 8rem 5rem;
 }
 
-.skill-grid-column {
-  margin: 0;
-  padding: 0;
+.skill-grid {
+  margin: 0 12rem;
+
+  .column {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .skill-paper {
   background-color: var(--mantine-color-paleBlue-1);
-  height: 12.5rem;
-  margin: 1rem;
+  height: 14rem;
+  margin: 0.5rem;
 
   .text {
     color: var(--mantine-color-blueGray-7);
+    text-align: center;
   }
 }
 
-.skill-badge-div {
+.skill-badge-container {
   margin: 0.5rem 0;
 
   .skill-badge {

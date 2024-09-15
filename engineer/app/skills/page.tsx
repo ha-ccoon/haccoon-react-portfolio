@@ -1,11 +1,11 @@
 import React from 'react';
 
-import SkillPaper from '@/components/paper/skill-paper';
+import SkillComponent from '@/components/skills/SkillComponent';
 
 export default function Skills() {
   return (
     <React.Fragment>
-      <SkillPaper />
+      <SkillComponent />
     </React.Fragment>
   );
 }
