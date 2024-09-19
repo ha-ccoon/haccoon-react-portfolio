@@ -10,17 +10,15 @@ import '@/components/navigation/navigation.scss';
 
 export default function NavigationBar() {
   return (
-    <section>
-      <Container className="nav-container">
-        <Link href={'/'}>MS</Link>
-        <nav>
-          {categories.map((element) => (
-            <Link className="element" key={element.key} href={element.route}>
-              {element.item}
-            </Link>
-          ))}
-        </nav>
-      </Container>
-    </section>
+    <Container className="nav-container">
+      <Link href={'/'}>MS</Link>
+      <nav>
+        {categories.map((element) => (
+          <Link className="element" key={element.key} href={element.route}>
+            {element.item}
+          </Link>
+        ))}
+      </nav>
+    </Container>
   );
 }
