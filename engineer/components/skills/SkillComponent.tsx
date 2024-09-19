@@ -1,30 +1,38 @@
 import {
   Badge,
+  Container,
   Flex,
   Grid,
   GridCol,
   Paper,
   Space,
-  Text,
   Title,
 } from '@mantine/core';
 
-import { SkillCategory } from '../types';
-import { skillCategory, skills } from '../constant';
+import { SkillCategory } from '@/components/types';
+import { skillCategory, skills } from '@/components/constant';
 
-import '@/components/paper/skill-paper.scss';
+import '@/components/skills/skill.scss';
 
-export default function SkillPaper() {
+export default function SkillComponent() {
   return (
     <section className="skill-section">
       <Title order={3}>Skills</Title>
+
       <Space h="md" />
-      <Grid gutter={{ base: 5, xs: 'md', md: 'xl', xl: 50 }} justify="center">
+
+      <Grid
+        classNames={{
+          root: 'skill-grid',
+        }}
+        gutter={{ base: 5, xs: 'md', md: 'xl', xl: 50 }}
+        justify="center"
+      >
         {skillCategory.map((value: SkillCategory, index: number) => {
           return (
             <GridCol
               classNames={{
-                col: 'skill-grid-column',
+                col: 'column',
               }}
               span={4}
               key={index}
@@ -41,6 +49,7 @@ export default function SkillPaper() {
                 <Title classNames={{ root: 'text' }} order={4}>
                   {value}
                 </Title>
+
                 <Flex
                   align="center"
                   columnGap="lg"
@@ -50,7 +59,7 @@ export default function SkillPaper() {
                   justify="flex-start"
                   key={index}
                 >
-                  <div className="skill-badge-div">
+                  <Container className="skill-badge-container">
                     {skills[value].map((value: string, index: number) => {
                       return (
                         <Badge
@@ -65,7 +74,7 @@ export default function SkillPaper() {
                         </Badge>
                       );
                     })}
-                  </div>
+                  </Container>
                 </Flex>
               </Paper>
             </GridCol>

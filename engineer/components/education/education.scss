@@ -1,13 +1,24 @@
 .education-section {
-  margin-bottom: 5rem;
+  margin: 5rem;
 
   .title {
     text-align: center;
   }
 
-  .timeline-div {
+  .timeline-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
   }
-  .timeline {
+
+  .grid-inner {
+    margin: 0;
+  }
+
+  .grid-col {
+    padding: 0 5rem 0 0;
   }
 }

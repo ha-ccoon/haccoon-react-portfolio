@@ -30,26 +30,32 @@ export default function EducationComponent() {
       >
         Education
       </Title>
+
       <Space h="md" />
 
-      <div className="timeline-div">
-        <Timeline
-          classNames={{
-            root: 'timeline',
-            itemBody: 'timeline-item-body',
-          }}
-          bulletSize={24}
-          lineWidth={2}
-        >
+      <Container
+        classNames={{
+          root: 'timeline-container',
+        }}
+      >
+        <Timeline bulletSize={24} lineWidth={2}>
           {educationData.map((value: Education, index) => {
             return (
               <TimelineItem key={index}>
-                <Grid>
-                  <GridCol span={6}>
+                <Grid
+                  classNames={{
+                    inner: 'grid-inner',
+                    col: 'grid-col',
+                  }}
+                  grow={true}
+                >
+                  <GridCol span={8}>
                     <Title order={5}>{value.title}</Title>
+
                     <Text c="dimmed" size="sm">
                       {value.organization}
                     </Text>
+
                     {value.description &&
                       value.description?.map((value, index) => {
                         return (
@@ -59,7 +65,8 @@ export default function EducationComponent() {
                         );
                       })}
                   </GridCol>
-                  <GridCol span={2}>
+
+                  <GridCol span={4}>
                     <Stack gap={0}>
                       <Text>{value.status}</Text>
                       <Text>{value.period}</Text>
@@ -70,7 +77,7 @@ export default function EducationComponent() {
             );
           })}
         </Timeline>
-      </div>
+      </Container>
 
       <Space h="md" />
     </section>
