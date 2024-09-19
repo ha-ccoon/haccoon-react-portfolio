@@ -4,7 +4,10 @@
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 5rem;
+  background-color: var(--mantine-color-sweetYellow-5);
+  width: 100%;
+
+  margin-top: 20rem;
 
   .title {
     text-align: center;
@@ -14,13 +17,15 @@
     margin: 3rem 0;
 
     .image {
-      background-color: white;
-      width: 20rem;
-      height: 20rem;
-      border-radius: 50%;
-      background: white;
       display: flex;
+
+      background: white;
+      background-color: white;
+      border-radius: 50%;
       overflow: hidden;
+
+      height: 20rem;
+      width: 20rem;
     }
   }
 
@@ -30,4 +35,10 @@
 
     margin: 3rem 0;
   }
+}
+
+.contact-container {
+  background-color: var(--mantine-color-sweetYellow-5);
+
+  margin-top: -15rem;
 }
