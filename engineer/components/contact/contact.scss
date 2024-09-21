@@ -1,0 +1,44 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--mantine-color-sweetYellow-5);
+  width: 100%;
+
+  margin-top: 20rem;
+
+  .contact-container {
+    background-color: var(--mantine-color-sweetYellow-5);
+
+    margin-top: -15rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .image-div {
+    margin: 3rem 0;
+
+    .image {
+      display: flex;
+
+      background: white;
+      background-color: white;
+      border-radius: 50%;
+      overflow: hidden;
+
+      height: 20rem;
+      width: 20rem;
+    }
+  }
+}
+
+.icons-container {
+  display: flex;
+  gap: 2rem;
+
+  margin: 3rem 0;
+}

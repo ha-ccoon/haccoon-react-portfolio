@@ -2,29 +2,20 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import { ActionIcon, Button, Divider, Text, Title } from '@mantine/core';
-import {
-  IconBrandGithub,
-  IconBrandGithubFilled,
-  IconBrandLinkedin,
-  IconBrandNotion,
-  IconFile,
-  IconFileDescription,
-  IconFileHorizontal,
-  IconFileSmile,
-  IconFileText,
-} from '@tabler/icons-react';
+import { Button, Container, Text, Title } from '@mantine/core';
+
+import { IconBrandNotion, IconFileDescription } from '@tabler/icons-react';
 
 import './greeting.scss';
 
 export default function Greeting() {
   return (
-    <React.Fragment>
+    <section>
       <Title className="greeting-title" order={1}>
         Hi, I am &nbsp;<span className="name">Minha Sohn</span>
       </Title>
 
-      <div className="greeting-container">
+      <Container className="greeting-container" fluid={true}>
         <div className="greeting-image-div">
           <Image
             className="greeting-image"
@@ -36,7 +27,7 @@ export default function Greeting() {
           />
         </div>
 
-        <section className="greeting-section">
+        <Container className="greeting-section">
           <div className="greeting-sub-div">
             <Title order={2}>Full-Stack Engineer</Title>
             <Title order={4}>Specialized in Healthcare</Title>
@@ -47,7 +38,8 @@ export default function Greeting() {
               perspiciatis! Maiores minima consectetur.
             </Text>
           </div>
-          <div className="greeting-button-div">
+
+          <Container className="greeting-button-div">
             <Button
               className="greeting-button"
               leftSection={<IconFileDescription title="resume" />}
@@ -62,19 +54,9 @@ export default function Greeting() {
             >
               Portfolio
             </Button>
-          </div>
-
-          {/* TODO: 20240827 find a place for the below icons */}
-          {/* <div>
-            <ActionIcon size={35}>
-              <IconBrandGithub size={30} stroke={2} title="github" />
-            </ActionIcon>
-            <ActionIcon size={35}>
-              <IconBrandLinkedin size={30} title="linkedin" />
-            </ActionIcon>
-          </div> */}
-        </section>
-      </div>
-    </React.Fragment>
+          </Container>
+        </Container>
+      </Container>
+    </section>
   );
 }
