@@ -3,22 +3,18 @@ import { Category, Education, Experience, SkillCategory } from './types';
 // navigation
 export const categories: Category[] = [
   {
-    key: '1',
     route: '#skills',
     item: 'Skills',
   },
   {
-    key: '2',
     route: '#education',
     item: 'Education',
   },
   {
-    key: '3',
     route: '#experience',
     item: 'Experience',
   },
   {
-    key: '4',
     route: '#contact',
     item: 'Contact',
   },
