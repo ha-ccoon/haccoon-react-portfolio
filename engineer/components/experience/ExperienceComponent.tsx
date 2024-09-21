@@ -23,7 +23,7 @@ export default function ExperienceComponent() {
     <section className="experience-section">
       <Title order={3}>Experience</Title>
 
-      <Space h="xl" />
+      <Space h="md" />
 
       <div>
         {experienceData.map((value, experienceIdx) => {

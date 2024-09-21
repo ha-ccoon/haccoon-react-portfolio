@@ -12,17 +12,20 @@
 .greeting-container {
   display: flex;
   justify-content: center;
+
+  margin: 0 12rem;
+  padding: 0;
 }
 
 .greeting-image-div {
   width: 30%;
 
   .greeting-image {
-    background-color: white;
+    background-color: var(--mantine-color-blueGray-1);
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    background: white;
+    background: var(--mantine-color-blueGray-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +34,7 @@
 }
 
 .greeting-section {
+  margin: 0;
   padding: 2rem 2.5rem 0;
 
   width: 60%;

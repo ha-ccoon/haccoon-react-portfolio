@@ -1,29 +1,26 @@
-import { Category, Experience, SkillCategory } from './types';
+import { Category, Education, Experience, SkillCategory } from './types';
 
+// navigation
 export const categories: Category[] = [
   {
-    key: '1',
     route: '#skills',
     item: 'Skills',
   },
   {
-    key: '2',
-    route: 'education',
+    route: '#education',
     item: 'Education',
   },
   {
-    key: '3',
     route: '#experience',
     item: 'Experience',
   },
   {
-    key: '4',
-    route: 'contact',
+    route: '#contact',
     item: 'Contact',
   },
 ];
 
-//
+// skill
 export const skillCategory: SkillCategory[] = [
   'Backend',
   'Frontend',
@@ -48,7 +45,36 @@ export const skills: Record<SkillCategory, string[]> = {
   ],
 };
 
-//
+// education
+export const educationData: Education[] = [
+  {
+    title: 'AI workforce development Course Completion (70 hrs)',
+    organization: 'KIST (Korea Institute of Science and Technology)',
+    period: '2024.07 - 2024.08',
+    status: 'Complete',
+  },
+  {
+    title: 'Web Development & IoT Bootcamp (6 months)',
+    organization: 'Elice',
+    period: '2022.12 - 2023.05',
+    status: 'Complete',
+  },
+  {
+    title: 'Business Administration - Supply Chain Management',
+    organization: 'Southern Alberta Institute of Technology (SAIT)',
+    period: '2018.01 - 2019.12',
+    status: 'Graduate',
+    description: ['캐나다 캘거리 소재의 대학에서 경영학과 - 유통 전공 졸업'],
+  },
+  {
+    title: 'Display Engineering',
+    organization: 'Pukyong National University',
+    period: '2014.01 - 2016.06',
+    status: 'Withdrawal',
+  },
+];
+
+// experience
 export const experienceData: Experience[] = [
   {
     company: 'Lien Inc.',

@@ -1,0 +1,12 @@
+.header {
+  background-color: var(--mantine-color-sweetYellow-5);
+}
+
+.navigation-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: rem(30);
+
+  color: var(--mantine-color-paleBlue-9);
+}
