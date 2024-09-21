@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ha-ccoon/haccoon-react-portfolio/compare/v1.1.0...v1.2.0) (2024-09-21)
+
+
+### Features
+
+* create a education section ([3f6b1f4](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/3f6b1f4c0fafe9135b03270ded211674a62e0643))
+
 ## [1.1.0](https://github.com/ha-ccoon/haccoon-react-portfolio/compare/v1.0.0...v1.1.0) (2024-09-10)
 
 
