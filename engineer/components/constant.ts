@@ -7,12 +7,12 @@ export const categories: Category[] = [
     item: 'Skills',
   },
   {
-    route: '#education',
-    item: 'Education',
-  },
-  {
     route: '#experience',
     item: 'Experience',
+  },
+  {
+    route: '#education',
+    item: 'Education',
   },
   {
     route: '#contact',

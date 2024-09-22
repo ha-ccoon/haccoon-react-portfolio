@@ -20,7 +20,7 @@ import '@/components/experience/experience.scss';
 
 export default function ExperienceComponent() {
   return (
-    <section className="experience-section">
+    <section id="experience" className="experience-section">
       <Title order={3}>Experience</Title>
 
       <Space h="md" />
