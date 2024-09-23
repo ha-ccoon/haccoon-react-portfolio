@@ -16,7 +16,7 @@ import '@/components/skills/skill.scss';
 
 export default function SkillComponent() {
   return (
-    <section className="skill-section">
+    <section id="skills" className="skill-section">
       <Title order={3}>Skills</Title>
 
       <Space h="md" />
