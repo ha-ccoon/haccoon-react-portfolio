@@ -29,7 +29,11 @@ export default function Main() {
     >
       <Header />
 
-      <AppShellMain>
+      <AppShellMain
+        style={{
+          padding: '0 1rem 1rem 1rem',
+        }}
+      >
         <Greeting />
         <Skills />
         <Experience />

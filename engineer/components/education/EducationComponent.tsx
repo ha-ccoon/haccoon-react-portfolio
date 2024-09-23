@@ -21,7 +21,7 @@ import '@/components/education/education.scss';
 
 export default function EducationComponent() {
   return (
-    <section className="education-section">
+    <section id="education" className="education-section">
       <Title
         classNames={{
           root: 'title',
