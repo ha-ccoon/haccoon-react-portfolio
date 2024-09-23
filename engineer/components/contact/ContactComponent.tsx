@@ -10,7 +10,7 @@ import '@/components/contact/contact.scss';
 
 export default function ContactComponent() {
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <Container
         classNames={{
           root: 'contact-container',
