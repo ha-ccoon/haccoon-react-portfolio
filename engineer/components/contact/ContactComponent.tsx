@@ -43,7 +43,7 @@ export default function ContactComponent() {
       <Text>Full Stack Engineer specialized in Healthcare</Text>
       {/* <Text>True Korean, Honorary Canadian</Text> */}
 
-      <LinkIcons />
+      {/* <LinkIcons /> */}
 
       <Text>&copy; 2024 by haccoon. All Rights Reserved.</Text>
 

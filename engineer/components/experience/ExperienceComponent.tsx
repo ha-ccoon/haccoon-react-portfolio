@@ -15,6 +15,7 @@ import {
 } from '@mantine/core';
 
 import { experienceData } from '../constant';
+import { Experience, PositionDescriptions, Positions } from '../types';
 
 import '@/components/experience/experience.scss';
 
@@ -26,7 +27,7 @@ export default function ExperienceComponent() {
       <Space h="md" />
 
       <div>
-        {experienceData.map((value, experienceIdx) => {
+        {experienceData.map((value: Experience, experienceIdx: number) => {
           return (
             <div key={experienceIdx}>
               <div className="experience-title-div">
@@ -52,36 +53,43 @@ export default function ExperienceComponent() {
                   }}
                   grow={true}
                 >
-                  {value.positions.map((value) => {
-                    return [
-                      <GridCol span={4}>
-                        <Stack gap={0}>
-                          <Title order={5}>{value.position}</Title>
-                          <Text
-                            classNames={{
-                              root: 'period',
-                            }}
-                          >
-                            {value.period}
-                          </Text>
-                        </Stack>
-                      </GridCol>,
-                      <GridCol span={8}>
-                        {value.descriptions.map((value, descriptionIdx) => {
-                          return (
-                            <List key={descriptionIdx}>
-                              <ListItem>{value.main}</ListItem>
-                              <List withPadding={true}>
-                                {value.secondary && (
-                                  <ListItem>{value.secondary}</ListItem>
-                                )}
-                              </List>
-                            </List>
-                          );
-                        })}
-                      </GridCol>,
-                    ];
-                  })}
+                  {value.positions.map(
+                    (value: Positions, positionsIdx: number) => {
+                      return [
+                        <GridCol span={4} key={`position/${positionsIdx}`}>
+                          <Stack gap={0}>
+                            <Title order={5}>{value.position}</Title>
+                            <Text
+                              classNames={{
+                                root: 'period',
+                              }}
+                            >
+                              {value.period}
+                            </Text>
+                          </Stack>
+                        </GridCol>,
+                        <GridCol span={8} key={`descriptions/${positionsIdx}`}>
+                          {value.descriptions.map(
+                            (
+                              value: PositionDescriptions,
+                              descriptionIdx: number,
+                            ) => {
+                              return (
+                                <List key={descriptionIdx}>
+                                  <ListItem>{value.main}</ListItem>
+                                  <List withPadding={true}>
+                                    {value.secondary && (
+                                      <ListItem>{value.secondary}</ListItem>
+                                    )}
+                                  </List>
+                                </List>
+                              );
+                            },
+                          )}
+                        </GridCol>,
+                      ];
+                    },
+                  )}
                 </Grid>
                 <div className="experience-divider">
                   <Divider my="md" />
