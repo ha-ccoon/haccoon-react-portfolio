@@ -9,9 +9,18 @@ import {
 import '@/components/contact/contact.scss';
 
 export const actionIcons = [
-  { href: process.env.LINKEDIN, icon: <IconBrandLinkedin size={40} /> },
-  { href: process.env.GITHUB, icon: <IconBrandGithub size={40} /> },
-  { href: process.env.TWITTER, icon: <IconBrandTwitter size={40} /> },
+  {
+    href: process.env.NEXT_PUBLIC_LINKEDIN,
+    icon: <IconBrandLinkedin size={40} />,
+  },
+  {
+    href: process.env.NEXT_PUBLIC_GITHUB,
+    icon: <IconBrandGithub size={40} />,
+  },
+  {
+    href: process.env.NEXT_PUBLIC_TWITTER,
+    icon: <IconBrandTwitter size={40} />,
+  },
 ];
 
 export function LinkIcons() {
