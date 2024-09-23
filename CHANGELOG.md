@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/ha-ccoon/haccoon-react-portfolio/compare/v1.2.0...v1.3.0) (2024-09-23)
+
+
+### Features
+
+* implement scroll functionality ([463aafc](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/463aafc63607896cf0272136334aa93334400499))
+
+
+### Bug Fixes
+
+* extra attributes from the server href ([d2b395e](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/d2b395e5bf20bec7f61c145cb00b66977e866c3a))
+* react key error ([da2d4ec](https://github.com/ha-ccoon/haccoon-react-portfolio/commit/da2d4ec427893c4b78824cbeb21c51ae5d4de68b))
+
 ## [1.2.0](https://github.com/ha-ccoon/haccoon-react-portfolio/compare/v1.1.0...v1.2.0) (2024-09-21)
 
 
