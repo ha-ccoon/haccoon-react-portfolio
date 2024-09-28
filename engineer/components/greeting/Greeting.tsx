@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Image from 'next/image';
 
@@ -7,10 +7,37 @@ import { Button, Container, Text, Title } from '@mantine/core';
 import { IconBrandNotion, IconFileDescription } from '@tabler/icons-react';
 
 import './greeting.scss';
+import { addDoc, collection } from '@firebase/firestore';
+import db from '@/firebase/firestore';
 
 export default function Greeting() {
+  const [value, setValue] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const docRef = await addDoc(collection(db, 'items'), {
+        name: value,
+      });
+      console.log('Document written with ID: ', docRef.id);
+      setValue(''); // Clear the form
+    } catch (e) {
+      console.error('Error adding document: ', e);
+    }
+  };
+
   return (
     <section>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          placeholder="Add a new item"
+        />
+        <button type="submit">Add Item</button>
+      </form>
+
       <Title className="greeting-title" order={1}>
         Hi, I am &nbsp;<span className="name">Minha Sohn</span>
       </Title>
