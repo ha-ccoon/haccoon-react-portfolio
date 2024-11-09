@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches: ['feature/*']
+  pull_request:
+    branches: ['feature/*']
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-output
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+
+      - name: Run tests
+        run: npm test
