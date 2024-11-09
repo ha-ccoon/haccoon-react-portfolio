@@ -34,3 +34,7 @@ jobs:
       - name: Run build
         run: npm run build
         working-directory: ./engineer
+
+      - name: Run tests
+        run: npm run test
+        working-directory: ./engineer
