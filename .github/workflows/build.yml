@@ -18,11 +18,11 @@ jobs:
         node-version: [22.x]
 
     steps:
-      - name: Access to working directory
-        run: ./run-commands.sh
-
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Access to working directory
+        run: ./run-commands.sh
 
       - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
